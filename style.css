@@ -1,23 +1,208 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=League+Spartan:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=League+Spartan:wght@100..900&display=swap");
 
-
-:root{
-
+:root {
   /*   Colors */
---Very-Dark-Magenta: hsl(300, 43%, 22%);
---Soft-Pink: hsl(333, 80%, 67%);
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
 
-/* ### Neutral  */
+  /* ### Neutral  */
 
---Dark-Grayish-Magenta: hsl(303, 10%, 53%);
---Light-Grayish-Magenta: hsl(300, 24%, 96%);
---White: hsl(0, 0%, 100%);
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
 
-/* -------------------------------------------------------------------------- */
+  /* -------------------------------------------------------------------------- */
 
-/* Fonts */
+  /* Fonts */
 
---font-karla: "Karla", sans-serif;
+  --font-karla: "Karla", sans-serif;
+}
 
+body {
+  font-family: var(--font-karla);
+  margin: 0;
+  padding: 0;
+  background-color: var(--White);
+  background-image: url("./images/bg-pattern-top-mobile.svg"),
+    url("./images/bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+  font-size: 1rem;
+}
 
+/* <!-- Encabezado y descripción --> */
+
+.social-proof-section {
+  padding-inline: 1.5rem;
+}
+
+.title {
+  width: 75%;
+  color: var(--Very-Dark-Magenta);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 5.125rem auto 0 auto;
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+
+.description {
+  color: var(--Dark-Grayish-Magenta);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+/* Calificaciones de estrellas */
+
+.ratings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.rating {
+  width: 100%;
+  height: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+  background-color: var(--Light-Grayish-Magenta);
+  border-radius: 8px;
+}
+
+.stars {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.25rem;
+}
+
+.rating-text {
+  color: var(--Very-Dark-Magenta);
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Testimonios de usuarios */
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.testimonial {
+  /* max-width: 317px; */
+
+  background-color: var(--Very-Dark-Magenta);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.user-name {
+  color: var(--White);
+  font-size: 1rem;
+  font-weight: 700;
+}
+.user-role {
+  color: var(--Soft-Pink);
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-top: -0.8rem;
+}
+
+.story {
+  color: var(--White);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+/* footer */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  body {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 150px;
+    border: 1px solid blue;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+  }
+
+  .header {
+    width: 40%;
+  }
+
+  .title {
+    width: 70%;
+    margin: 0;
+    padding: auto;
+    text-align: left;
+    font-size: 2.75rem;
+  }
+  .description {
+    width: 70%;
+    text-align: left;
+  }
+
+  .ratings div:nth-child(2) {
+    margin-left: 7.9375rem;
+  }
+  .ratings .rating:nth-child(3) {
+    margin-left: 12.875rem;
+  }
+
+  .rating {
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .stars {
+    margin-top: 0;
+    gap: 0.5rem;
+    padding-inline: 3rem;
+  }
+
+  .rating-text {
+    padding-right: 2rem;
+    text-align: start;
+  }
 }
