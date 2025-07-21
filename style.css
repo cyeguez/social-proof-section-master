@@ -162,7 +162,7 @@ body {
     background-image: url("./images/bg-pattern-top-desktop.svg"),
       url("./images/bg-pattern-bottom-desktop.svg");
     background-repeat: no-repeat;
-    background-position: top left, bottom right;
+    background-position: top left, top right;
   }
 
   .social-proof-section {
@@ -205,12 +205,13 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    gap: 1.5rem;
   }
 
   .stars {
     margin-top: 0;
     gap: 0.5rem;
-    padding-inline: 3rem;
+    padding-left: 2rem;
   }
 
   .rating-text {
@@ -222,7 +223,7 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     gap: 1.875rem;
-    border: 1px solid red;
+    
   }
   .testimonial {
     width: 317px;
