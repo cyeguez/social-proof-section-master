@@ -232,10 +232,10 @@ body {
     justify-content: space-between;
   }
 
-  .testimonials div:nth-child(2) {
+  .testimonials article:nth-child(2) {
     margin-top: 1rem;
   }
-  .testimonials div:nth-child(3) {
+  .testimonials article:nth-child(3) {
     margin-top: 2rem;
   }
 }
