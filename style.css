@@ -164,7 +164,6 @@ body {
       url("./images/bg-pattern-bottom-desktop.svg");
     background-repeat: no-repeat;
     background-position: top left, bottom right;
-    border: 1px solid red;
   }
 
   .social-proof-section {
