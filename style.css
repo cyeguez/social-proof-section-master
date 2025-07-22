@@ -223,7 +223,6 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     gap: 1.875rem;
-    
   }
   .testimonial {
     width: 317px;
