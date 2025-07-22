@@ -17,7 +17,7 @@
   /* Fonts */
 
   --font-karla: "Karla", sans-serif;
-  --breakpoint: 48em;
+  
 }
 
 html {
@@ -104,7 +104,6 @@ body {
 }
 
 .testimonial {
-  /* max-width: 317px; */
 
   background-color: var(--Very-Dark-Magenta);
   border-radius: 8px;
@@ -156,7 +155,7 @@ body {
 }
 
 /* Responsive Design */
-@media (min-width: var(--breakpoint)) {
+@media (min-width: 48em) {
   body {
     max-width: 90rem;
     margin: 0 auto;
@@ -165,6 +164,7 @@ body {
       url("./images/bg-pattern-bottom-desktop.svg");
     background-repeat: no-repeat;
     background-position: top left, bottom right;
+    border: 1px solid red;
   }
 
   .social-proof-section {
