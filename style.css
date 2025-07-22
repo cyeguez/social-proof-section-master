@@ -10,12 +10,14 @@
   --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
   --Light-Grayish-Magenta: hsl(300, 24%, 96%);
   --White: hsl(0, 0%, 100%);
+  --Blue: hsl(228, 45%, 44%);
 
   /* -------------------------------------------------------------------------- */
 
   /* Fonts */
 
   --font-karla: "Karla", sans-serif;
+  --breakpoint: 48em;
 }
 
 html {
@@ -44,7 +46,7 @@ body {
   width: 75%;
   color: var(--Very-Dark-Magenta);
   text-align: center;
-  font-size: 2rem;
+  font-size: clamp(2rem, 5vw, 2.75rem);
   font-weight: 800;
   margin: 5.125rem auto 0 auto;
   letter-spacing: -1px;
@@ -54,7 +56,7 @@ body {
 .description {
   color: var(--Dark-Grayish-Magenta);
   text-align: center;
-  font-size: 14px;
+ font-size: clamp(0.9rem, 2vw, 1.1rem);
   font-weight: 500;
 }
 /* Calificaciones de estrellas */
@@ -124,7 +126,7 @@ body {
 
 .user-name {
   color: var(--White);
-  font-size: 1rem;
+  font-size: clamp(1rem, 2vw, 1.25rem);
   font-weight: 700;
 }
 .user-role {
@@ -136,7 +138,7 @@ body {
 
 .story {
   color: var(--White);
-  font-size: 0.875rem;
+ font-size: clamp(0.875rem, 1.5vw, 1rem);
   font-weight: 400;
   line-height: 1.5;
   margin-top: 1rem;
@@ -150,11 +152,11 @@ body {
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--Blue)
 }
 
 /* Responsive Design */
-@media (min-width: 768px) {
+@media (min-width: var(--breakpoint)) {
   body {
     max-width: 1440px;
     margin: 0 auto;
@@ -184,7 +186,6 @@ body {
     width: 70%;
     margin: 0;
     text-align: left;
-    font-size: 2.75rem;
   }
   .description {
     width: 70%;
